@@ -1,0 +1,1 @@
+function generate(){const url=document.getElementById('url').value;document.getElementById('out').textContent=JSON.stringify({video:btoa(url)},null,2);}

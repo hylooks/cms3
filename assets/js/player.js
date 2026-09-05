@@ -1,0 +1,1 @@
+const p=document.getElementById('player');const id=new URLSearchParams(location.search).get('v');fetch('assets/data/videos.json').then(r=>r.json()).then(db=>{const v=db.videos.find(x=>x.id===id);if(v){p.src=atob(v.video);}});
